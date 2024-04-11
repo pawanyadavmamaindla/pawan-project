@@ -29,31 +29,31 @@ const Routing = ()=>{
   },[])
   return(
     <Routes>
-      <Route exact path="https://pawan-project-3.onrender.com/" element={<Home />}>
+      <Route exact path="/" element={<Home />}>
       
       </Route>
-      <Route path="https://pawan-project-3.onrender.com/signin" element={<Signin />}>
+      <Route path="/signin" element={<Signin />}>
         
       </Route>
-      <Route path="https://pawan-project-3.onrender.com/signup" element={<Signup />}>
+      <Route path="/signup" element={<Signup />}>
         
       </Route>
-      <Route exact path="https://pawan-project-3.onrender.com/profile" element={<Profile />}>
+      <Route exact path="/profile" element={<Profile />}>
         
       </Route>
-      <Route path="https://pawan-project-3.onrender.com/create" element={<CreatePost/>}>
+      <Route path="/create" element={<CreatePost/>}>
         
       </Route>
-      <Route path="https://pawan-project-3.onrender.com/profile/:userid" element={<UserProfile />}>
+      <Route path="/profile/:userid" element={<UserProfile />}>
         
       </Route>
-      <Route path="https://pawan-project-3.onrender.com/myfollowingpost" element={<SubscribedUserPosts />}>
+      <Route path="/myfollowingpost" element={<SubscribedUserPosts />}>
         
       </Route>
-      <Route exact path="https://pawan-project-3.onrender.com/reset" element={<Reset/>}>
+      <Route exact path="/reset" element={<Reset/>}>
         
       </Route>
-      <Route path="https://pawan-project-3.onrender.com/reset/:token" element={<NewPassword />}>
+      <Route path="/reset/:token" element={<NewPassword />}>
         
       </Route>
       
