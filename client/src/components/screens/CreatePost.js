@@ -28,7 +28,7 @@ const CretePost = ()=>{
            }
            else{
                M.toast({html:"Created post Successfully",classes:"#43a047 green darken-1"})
-               navigate.call('/')
+               navigate('/')
            }
         }).catch(err=>{
             console.log(err)

@@ -54,7 +54,7 @@ const SignIn  = ()=>{
            }
            else{
                M.toast({html:data.message,classes:"#43a047 green darken-1"})
-               navigate.call('/signin')
+               navigate('/signin')
            }
         }).catch(err=>{
             console.log(err)

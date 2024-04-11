@@ -23,7 +23,7 @@ const NavBar = ()=>{
             onClick={()=>{
               localStorage.clear()
               dispatch({type:"CLEAR"})
-              navigate.call('/signin')
+              navigate('/signin')
             }}
             >
                 Logout
@@ -77,7 +77,7 @@ const NavBar = ()=>{
             />
              <ul className="collection">
                {userDetails.map(item=>{
-                 return <Link to={item?._id !== state._id ?"/profile/"+item?._id:'/profile'} onClick={()=>{
+                 return <Link to={item?._id !== state?._id ?"/profile/"+item?._id:'/profile'} onClick={()=>{
                    M.Modal.getInstance(searchModal.current).close()
                    setSearch('')
                  }}><li className="collection-item">{item?.email}</li></Link> 
