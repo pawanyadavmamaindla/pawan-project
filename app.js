@@ -4,15 +4,10 @@ const mongoose  = require('mongoose')
 const PORT = process.env.PORT || 5000
 const {MONGOURI} = require('./config/keys')
 
-app.use(cors(
-    {
-        origin:["https://pawan-project.vercel.app"],
-        methods: ["POST", "GET"],
-        Credential:true
-    }
-))
+const path = require('path')
+const { fileURLToPath  } =  require('url');
 
-mongoose.set("strictQuery", false);
+
 
 mongoose.connect(MONGOURI,{
     useNewUrlParser:true,
