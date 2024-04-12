@@ -10,8 +10,7 @@ import CreatePost from './components/screens/CreatePost'
 import {reducer,initialState} from './reducers/userReducer'
 import UserProfile from './components/screens/UserProfile'
 import SubscribedUserPosts from './components/screens/SubscribesUserPosts'
-import Reset from './components/screens/Reset'
-import NewPassword from './components/screens/Newpassword'
+
 export const UserContext = createContext()
 
 
@@ -48,12 +47,6 @@ const Routing = ()=>{
         
       </Route>
       <Route path="/myfollowingpost" element={<SubscribedUserPosts />}>
-        
-      </Route>
-      <Route exact path="/reset" element={<Reset/>}>
-        
-      </Route>
-      <Route path="/reset/:token" element={<NewPassword />}>
         
       </Route>
       
