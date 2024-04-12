@@ -23,8 +23,8 @@ const Routing = ()=>{
     if(user){
       dispatch({type:"USER",payload:user})
     }else{
-      if(!navigate.call('/reset'))
-           navigate.call('/signin')
+      if(!navigate('/reset'))
+           navigate('/signin')
     }
   },[])
   return(

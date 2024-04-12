@@ -18,6 +18,10 @@ mongoose.connection.on('error',(err)=>{
     console.log("err connecting",err)
 })
 
+app.get("/",(req,res) =>{
+    res.json("hello")
+})
+
 require('./models/user')
 require('./models/post')
 
