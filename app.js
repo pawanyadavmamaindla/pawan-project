@@ -4,10 +4,6 @@ const mongoose  = require('mongoose')
 const PORT = process.env.PORT || 5000
 const {MONGOURI} = require('./config/keys')
 
-const path = require('path')
-const { fileURLToPath  } =  require('url');
-
-
 
 mongoose.connect(MONGOURI,{
     useNewUrlParser:true,
