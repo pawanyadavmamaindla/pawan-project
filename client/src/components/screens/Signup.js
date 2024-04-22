@@ -36,7 +36,7 @@ const SignIn  = ()=>{
             M.toast({html: "invalid email",classes:"#c62828 red darken-3"})
             return
         }
-        fetch("/signup",{
+        fetch("https://pawan-project.onrender.com/signup",{
             method:"post",
             headers:{
                 "Content-Type":"application/json"
